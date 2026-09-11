@@ -3,6 +3,49 @@
     <channel>
         <title>VoiceInput</title>
         <item>
+            <title>0.8.3</title>
+            <pubDate>Fri, 11 Sep 2026 16:34:29 -0700</pubDate>
+            <link>https://github.com/ymuromcev/voice-input-releases</link>
+            <sparkle:version>803</sparkle:version>
+            <sparkle:shortVersionString>0.8.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[
+### Добавлено
+
+- Расшифровку можно отменить. Наведи мышь на плашку расшифровки — в углу
+  появится ×; клик убирает плашку сразу, текст этой записи никуда не вставляется
+  и в буфер не кладётся, в меню — «Расшифровка отменена». Остальные записи в
+  очереди не трогаются. Запись, которая ещё ждёт очереди, до модели не доходит;
+  идущая останавливается почти сразу. С момента вставки отменить уже нельзя —
+  вставку не откатить, и крестик на это время пропадает. Клик по крестику не
+  забирает курсор из поля, где ты печатаешь; всё остальное по-прежнему кликается
+  сквозь плашку. Плашка, которая появилась или подъехала под неподвижный курсор,
+  клик не перехватывает — крестик появится, когда сдвинешь мышь.
+
+### Изменено
+
+- Подсказка «можно отпустить», которая появляется при первых залипаниях, теперь
+  держится три секунды, а потом на её месте снова таймер: на долгой диктовке
+  время нужнее, чем повторное напоминание. Смена плавная, ширина плашки не
+  прыгает.
+- Плашка расшифровки уходит раньше, чем текст попадает в поле, — текст приезжает
+  примерно на треть секунды позже, зато не из-под плашки. Если вставлять некуда
+  или часть речи не распозналась, плашка остаётся на месте и говорит об этом, как
+  и раньше. При диктовке подряд каждая следующая запись получает свой текст на те
+  же треть секунды позже предыдущей.
+- Пока модель грузится после запуска, плашка пишет «Загружаю модель…», а не
+  показывает анимацию расшифровки. Первая загрузка после установки или
+  пересборки может занять больше минуты: macOS собирает модель под Neural Engine.
+  С анимацией это выглядело как зависшая расшифровка.
+
+]]></description>
+            <enclosure url="https://raw.githubusercontent.com/ymuromcev/voice-input-releases/main/updates/VoiceInput-0.8.3.zip" length="2371477" type="application/octet-stream" sparkle:edSignature="PfMlJg2PtidoZVfJT6Dts9ufblcfJZOdRm8YsjHKwSy7isaABnwRU/KphkbRI7WArm4DdTqBiBjxsk351zKrCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/ymuromcev/voice-input-releases/main/updates/VoiceInput803-802.delta" sparkle:deltaFrom="802" length="249302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977712" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LDg1ViZPjeyWAw7oI9EyiTkD5Huszn80MWtnL2JR/P9YZzGgBxfAS2vg9XSfiu+tJW806B7WJ/YQC0B8IsMFBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.8.2</title>
             <pubDate>Fri, 11 Sep 2026 03:28:40 -0700</pubDate>
             <link>https://github.com/ymuromcev/voice-input-releases</link>
